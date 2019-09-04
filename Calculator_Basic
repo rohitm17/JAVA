@@ -1,0 +1,24 @@
+import java.util.*;
+class Calculator
+{
+	public static void main(String args[])
+	{float a,b,add,sub,mul,div;
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter Number One");
+	a=s.nextFloat();
+	System.out.println("Enter Number Two");
+	b=s.nextFloat();
+
+	add=a+b;
+	sub=a-b;
+	mul=a*b;
+	div=a/b;
+	
+	System.out.println("SUM IS:"+add);
+	System.out.println("DIFFERENCE IS:"+sub);
+	System.out.println("MULTIPLICATION IS:"+mul);
+	System.out.println("DIVISION IS:"+div);
+	
+	}
+}
+  	
