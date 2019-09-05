@@ -1,0 +1,38 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Krishnamurthy {
+	public static void main (String args[]) {
+		//code
+		int n,sum=0,m,a,p=1;
+		Scanner s=new Scanner(System.in);
+		System.out.println("ENTER NO");
+		n=s.nextInt();
+		m=n;
+		while(n!=0)
+		{a=n%10;
+         System.out.println(a);
+		 while(a!=0)
+		 {   p=p*a;
+		     a=a-1;
+		     System.out.println(p);
+		 }
+		
+		sum=sum+p;
+		p=1;
+		n=n/10;
+		System.out.println(sum);    
+		    
+		}
+		if(m==sum)
+		{
+		    System.out.println("NO IS KRISHNAMURTHY");
+		}
+		else
+		{
+		    System.out.println("NOT KRISHNAMURTHY");
+		}
+		
+	}
+}
