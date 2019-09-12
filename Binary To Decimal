@@ -1,0 +1,24 @@
+import java.util.*;
+class Binary
+{
+public static void main(String args[])
+{ 
+ int i,n,p=1,sum=0;
+ Scanner s=new Scanner(System.in);
+ System.out.println("ENTER ANY BINARY NUM");
+ n=s.nextInt();
+ while(n!=0)
+ {
+ 	i=n%10;
+ 	sum=sum+p*i;
+ 	p=p*2;
+ 	n=n/10;
+
+
+
+ }
+ System.out.println("DECIMAL OF BINARY NUM IS:");
+ System.out.println(sum);
+ 
+}
+}
