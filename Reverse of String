@@ -1,0 +1,16 @@
+import java.util.*;
+class Str{
+	public static void main(String args[]){
+
+		Scanner s=new Scanner(System.in);
+		System.out.println("ENTER A STRING");
+		String sg=s.nextLine();
+		int m=sg.length();
+		for (int i=m;i>0;i--){
+			System.out.print(sg.charAt(i-1));
+		}
+	}
+}
+/*The Java String charAt(int index) method returns the character at the specified index in a string.
+  The index value that we pass in this method should be between 0 and (length of string-1).
+  For example: s.charAt(0) would return the first character of the string represented by instance s.*/
