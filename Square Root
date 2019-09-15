@@ -1,0 +1,19 @@
+import java.util.*;
+class Sqrt
+{
+	public static void main(String args[])
+	{
+		double n,m,i;
+		
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a Num");
+		n=s.nextInt();
+		for (i=1;i<(n/2);i++)
+		{
+			if((n/i)==i)
+			{
+				System.out.println("Square Root of Number is:"+i);
+			}
+		}
+	}
+}
