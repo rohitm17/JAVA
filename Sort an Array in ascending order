@@ -1,0 +1,30 @@
+import java.util.*;
+class arraysort
+{
+	public static void main(String args[])
+	{
+	int i,temp;	
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter no of elements");
+	int n=s.nextInt();	
+	int arr[]=new int[n];
+	System.out.println("Enter Elements");
+	for(i=0;i<n;i++){
+		arr[i]=s.nextInt();
+		System.out.print(" "+arr[i]);
+	}
+	System.out.println("\n");
+	for(i=0;i<n;i++){
+		for(int j=i+1;j<n;j++){
+			if(arr[i]>arr[j]){
+				temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+		}
+	}
+	for(i=0;i<n;i++){
+		System.out.print(" "+arr[i]);
+	}
+}
+}
