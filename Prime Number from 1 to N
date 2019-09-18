@@ -1,0 +1,25 @@
+import java.util.*;
+class Prime{
+		public static void main(String args[]){
+		int n,i,j;                               //Variable declaration
+		Scanner s =new Scanner(System.in);
+		System.out.println("Enter a number");
+		n=s.nextInt();                           //user input
+		System.out.println("2\n3");
+		for(i=4;i<n;i++){                        //no between 1 to n
+			if(i%2==0){
+				continue;
+        }
+			else{
+				for(j=2;j<i;j++){
+					if(i%j==0){						//checking if prime or not
+						break;
+					}
+					if(j==(i-1)){
+						System.out.println(""+i);
+					}
+				}
+			}
+		}
+	}
+}
