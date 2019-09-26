@@ -29,4 +29,19 @@ Source code--->Compiler--->Bytecode--->Interpretor--->Output.
   =
 6.Conditional/Ternary:
   a>b?True:False
+  
+  
+<b>Abstract class in Java</b>  
+A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+    An abstract class must be declared with an abstract keyword.
+    It can have abstract and non-abstract methods.
+    It cannot be instantiated.
+    It can have constructors and static methods also.
+    It can have final methods which will force the subclass not to change the body of the method.    
+A method which is declared as abstract and does not have implementation is known as an abstract method. 
+Example of abstract method:    abstract void printStatus();//no method body and abstract  
+    
+If you are extending an abstract class that has an abstract method, you must either provide the implementation of the method or make this class abstract.
+  
 </pre>
