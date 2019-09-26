@@ -1,0 +1,30 @@
+/*Abstract class in java.
+    An abstract class must be declared with an abstract keyword.
+    It can have abstract and non-abstract methods.
+    It cannot be instantiated.
+    It can have constructors and static methods also.
+    It can have final methods which will force the subclass not to change the body of the method.
+*/
+//A factory method is a method that returns the instance of the class.
+abstract class A{
+
+	abstract void sum();
+	void fun(){
+		System.out.println("I am having fun");
+	}
+}
+class B extends A{
+	int a=10,b=30;
+	void sum(){
+		a=a+b;
+		System.out.println("Sum:"+a);
+	}
+	public static void main(String[] args) {
+		A a= new B();
+		a.sum();
+		a.fun();
+		
+	}
+}
+//Rule1: If there is an abstract method in a class, that class must be abstract.
+//Rule2: If you are extending an abstract class that has an abstract method,you must either provide the implementation of the method or make this class abstract.
