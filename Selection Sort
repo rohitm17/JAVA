@@ -1,0 +1,50 @@
+import java.util.*;
+class Selection{
+	public static void main(String args[])
+{
+	Scanner s = new Scanner(System.in);
+	System.out.println("Enter the no of elements in array");
+	int n=s.nextInt();
+	System.out.println("Array before Sorting");
+	System.out.println("ENter elements");
+	int arr[]=new int[n];
+	for (int i=0;i<n;i++)
+	{arr[i]=s.nextInt();
+	}
+	int temp;
+	for(int i=0;i<n-1;i++){
+		for(int j=i+1;j<n;j++){
+			if(arr[j]<arr[i])
+			{
+				temp=arr[j];
+				arr[j]=arr[i];
+				arr[i]=temp;
+			}
+		}
+	}
+	System.out.println("Array after Sorting :");
+	for (int i=0;i<n;i++)
+	{System.out.print(" "+arr[i]);
+	}
+}
+
+}
+/*
+arr[] = 64 25 12 22 11
+
+Find the minimum element in arr[0...4]
+and place it at beginning
+11 25 12 22 64
+
+Find the minimum element in arr[1...4]
+and place it at beginning of arr[1...4]
+11 12 25 22 64
+
+Find the minimum element in arr[2...4]
+and place it at beginning of arr[2...4]
+11 12 22 25 64
+
+Find the minimum element in arr[3...4]
+and place it at beginning of arr[3...4]
+11 12 22 25 64 
+*/
