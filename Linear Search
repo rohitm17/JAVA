@@ -1,0 +1,29 @@
+import java.util.*;
+class Linear
+{
+	public static void main(String args[])
+	{
+		Scanner s =new Scanner(System.in);
+		System.out.println("Enter the size of array");
+		int n=s.nextInt();
+
+		int arr[]=new int[n];
+		System.out.println("Enter elements");
+		for(int x=0;x<n;x++)
+		{
+			arr[x]=s.nextInt();
+		}
+		System.out.println("Enter the number to be searched");
+		int z=s.nextInt();
+		for(int x=0;x<n;x++)
+		{
+			if(arr[x]==z)
+			{
+				System.out.println("Element found at "+(x+1)+" place");
+				return;
+			}
+		}
+		System.out.println("Element not found");
+	}
+}
+ //A linear search or sequential search is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
