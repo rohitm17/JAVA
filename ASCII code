@@ -1,0 +1,13 @@
+import java.util.*;
+class Ascii_code
+{
+	public static void main(String args[])
+	{
+	Scanner s= new Scanner(System.in);
+	System.out.println("Enter the value you want to convert to AsCII");
+	char c=s.next().charAt(0);
+	int n=(int)c;
+	System.out.println("ASCII value is:"+n);
+
+	}
+}
