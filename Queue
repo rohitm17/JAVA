@@ -1,0 +1,90 @@
+public class Queue
+{
+	int queue[]=new int[5];
+		int size;
+		int rear;
+		int front;
+	public void enQueue(int data)
+	{
+		if(!isFull())
+		{	
+		queue[rear]=data;
+		rear=(rear+1)%5;
+		size=size+1;
+		}
+		else
+		{
+			System.out.println("Queue is Full");
+		}
+	}
+	public int deQueue()
+	{
+		int data=queue[front];
+		if(!isEmpty())
+		{		
+		front=(front+1)%5;
+		size=size-1;		
+		}
+		else{
+			System.out.println("Queue is Empty");
+		}
+		return data;
+	}
+	public void show()
+	{
+		System.out.println("\nELEMENTS IN QUEUE ARE:");
+		for(int i=0;i<size;i++)
+		{
+			System.out.print(queue[(front+i)%5]+" ");
+		}
+
+		System.out.println("\nELEMENTS IN Circular Array ARE:");
+		for(int i=0;i<5;i++)
+		{
+			System.out.print(queue[i]+" ");
+		}
+
+	}
+	public int getSize()
+	{
+		return size;
+	}	
+	public boolean isEmpty()
+	{
+		return size==0;
+	}
+	public boolean isFull()
+	{
+		return size==5;
+	}
+	public static void main(String[] args) {
+		Queue q=new Queue();
+		q.enQueue(4);
+		q.enQueue(6);
+		q.enQueue(8);
+		q.enQueue(2);
+		q.enQueue(3);
+
+		q.show();
+
+		q.deQueue();
+		q.deQueue();
+		q.deQueue();
+
+		q.show();
+
+		q.enQueue(18);
+		q.enQueue(21);
+		q.enQueue(13);
+
+		q.deQueue();
+		q.show();
+		System.out.println("\nSIZE:"+q.getSize());
+		System.out.println("\nEMPTY:"+q.isEmpty());
+		System.out.println("\nFULL:"+q.isFull());
+
+	}
+}
+
+//for reference:
+//https://www.youtube.com/playlist?list=PLsyeobzWxl7oRKwDi7wjrANsbhTX0IK0J
