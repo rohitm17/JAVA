@@ -1,5 +1,5 @@
 import java.util.*;
-//Longest Common Subsequence
+//Longest Palindromic Subsequence
 
 class LPSseq
 {
