@@ -1,4 +1,4 @@
-//Longest Palindromic substring
+//Longest  Palindromic  substring
 import java.util.*;
 class LPStr
 {
