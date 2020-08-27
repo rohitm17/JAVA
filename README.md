@@ -94,4 +94,22 @@ Ans. 1.Abstraction solves the problem at design level while encapsulation solves
 
 4.For example: Outer Look of a Television, like it has a display screen and channel buttons to change channel it explains Abstraction but Inner Implementation detail of a Television how CRT and Display Screen are connect with each other using different circuits , it explains Encapsulation.
 
+
+<b>Method Overloading(Compile Time Polymorphism) </b>
+ 
+ Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different. It is similar to constructor   overloading in Java, that allows a class to have more than one constructor having different argument lists.
+
+<b>Method Overriding(Run Time Polymorphism) </b>
+
+  Declaring a method in sub class which is already present in parent class is known as method overriding. Overriding is done so that a child class can give its own implementation to a method which is already provided by the parent class. In this case the method in parent class is called overridden method and the method in child class is called overriding method.
+
+<b>Difference between Overloading and Overriding</b>
+
+  Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition has happens at compile-time however binding of overridden method call to its definition happens at runtime.
+  
+  The most basic difference is that overloading is being done in the same class while for overriding base and child classes are required. Overriding is all about giving a specific implementation to the inherited method of parent class.
+  
+  Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding methods.
+  
+  Performance: Overloading gives better performance compared to overriding. The reason is that the binding of overridden methods is being done at runtime.
 </pre>
