@@ -13,8 +13,10 @@ JVM: JAVA VIRTUAL MACHINE
 JSL: JAVA STANDARD LIBRARY
 API: APPLICATION PROGRAMMING INTERFACE
 
-The Java codes are first compiled into byte code (machine independent code). Then the byte code is run on Java Virtual Machine (JVM) regardless of the underlying architecture. 
-Java is Object Oriented. However it is not considered as pure object oriented as it provides support for primitive data types (like int, char, etc).
+The Java codes are first compiled into byte code (machine independent code). 
+Then the byte code is run on Java Virtual Machine (JVM) regardless of the underlying architecture. 
+Java is Object Oriented. 
+However it is not considered as pure object oriented as it provides support for primitive data types (like int, char, etc).
 
 Source code--->Compiler--->Bytecode--->Interpretor--->Output.
 
@@ -35,9 +37,12 @@ Source code--->Compiler--->Bytecode--->Interpretor--->Output.
 <b>Access Specifiers</b>
 There are four types of access specifiers in java:
 public: Accessible to all. Other objects can also access this member variable or function.
-private: Not accessible by other objects. Private members can be accessed only by the methods in the same class. Object accessible only in class in which they are declared.
-protected: The scope of a protected variable is within the class which declares it and in the class which inherits from the class (Scope is class and subclass).
-Default: Scope is Package Level. We do not need to explicitly mention default as when we do not mention any access specifier it is considered as default.
+private: Not accessible by other objects. Private members can be accessed only by the methods in the same class.
+         Object accessible only in class in which they are declared.
+protected: The scope of a protected variable is within the class which declares it and in the class which inherits 
+           from the class (Scope is class and subclass).
+Default: Scope is Package Level. We do not need to explicitly mention default as when we do not mention any access
+         specifier it is considered as default.
 
 <b>IS-A & HAS-A Relationships</b>
 
@@ -48,10 +53,11 @@ public class Car extends Vehicle{
    private License myCarLicense;
 }
 
-  
+ 
   
 <b>Abstract class in Java</b>  
-A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
+A class which is declared with the abstract keyword is known as an abstract class in Java. 
+It can have abstract and non-abstract methods (method with the body).
 Abstraction is a process of hiding the implementation details and showing only functionality to the user.
     An abstract class must be declared with an abstract keyword.
     It can have abstract and non-abstract methods.
@@ -61,11 +67,15 @@ Abstraction is a process of hiding the implementation details and showing only f
 A method which is declared as abstract and does not have implementation is known as an abstract method. 
 Example of abstract method:    abstract void printStatus();//no method body and abstract  
     
-If you are extending an abstract class that has an abstract method, you must either provide the implementation of the method or make this class abstract.
+If you are extending an abstract class that has an abstract method, you must either provide the implementation
+of the method or make this class abstract.
 
 <b>Interfaces in Java</b>
 
-An interface is a blueprint of a class, which can be declared by using interface keyword. Interfaces can contain only constants and abstract methods (methods with only signatures no body).Like abstract classes, Interfaces cannot be instantiated, they can only be implemented by classes or extended by other interfaces. Interface is a common way to achieve full abstraction in Java.
+An interface is a blueprint of a class, which can be declared by using interface keyword. 
+Interfaces can contain only constants and abstract methods (methods with only signatures no body).
+Like abstract classes, Interfaces cannot be instantiated, they can only be implemented by classes or extended by other interfaces. 
+Interface is a common way to achieve full abstraction in Java.
 
     Java does not support Multiple Inheritance, however a class can implement more than one interfaces
     Interface is similar to an abstract class but it contains only abstract methods.
@@ -86,30 +96,44 @@ class ClassName extends Superclass implements Interface1, Interface2, ....
 
  Q.What is difference between Encapsulation And Abstraction?
 
-Ans. 1.Abstraction solves the problem at design level while encapsulation solves the problem at implementation level
+Ans. 
+1.  Abstraction solves the problem at design level while encapsulation solves the problem at implementation level
 
-2.Abstraction is used for hiding the unwanted data and giving relevant data. while Encapsulation means hiding the code and data into a single unit to protect the data from outside world.
+2.  Abstraction is used for hiding the unwanted data and giving relevant data. while Encapsulation means hiding the
+    code and data into a single unit to protect the data from outside world.
 
-3. Abstraction lets you focus on what the object does instead of how it does it while Encapsulation means hiding the internal details or mechanics of how an object does something.
+3.  Abstraction lets you focus on what the object does instead of how it does it while Encapsulation means hiding the
+    internal details or mechanics of how an object does something.
 
-4.For example: Outer Look of a Television, like it has a display screen and channel buttons to change channel it explains Abstraction but Inner Implementation detail of a Television how CRT and Display Screen are connect with each other using different circuits , it explains Encapsulation.
+4.  For example: Outer Look of a Television, like it has a display screen and channel buttons to change channel it 
+    explains Abstraction but Inner Implementation detail of a Television how CRT and Display Screen are connect with 
+    each other using different circuits , it explains Encapsulation.
 
 
 <b>Method Overloading(Compile Time Polymorphism) </b>
  
- Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different. It is similar to constructor   overloading in Java, that allows a class to have more than one constructor having different argument lists.
+ Method Overloading is a feature that allows a class to have more than one method having the same name, 
+ if their argument lists are different. It is similar to constructor  overloading in Java, that allows a 
+ class to have more than one constructor having different argument lists.
 
 <b>Method Overriding(Run Time Polymorphism) </b>
 
-  Declaring a method in sub class which is already present in parent class is known as method overriding. Overriding is done so that a child class can give its own implementation to a method which is already provided by the parent class. In this case the method in parent class is called overridden method and the method in child class is called overriding method.
+  Declaring a method in sub class which is already present in parent class is known as method overriding. 
+  Overriding is done so that a child class can give its own implementation to a method which is already provided by the parent class. 
+  In this case the method in parent class is called overridden method and the method in child class is called overriding method.
 
 <b>Difference between Overloading and Overriding</b>
 
-  Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition has happens at compile-time however binding of overridden method call to its definition happens at runtime.
+  Overloading happens at compile-time while Overriding happens at runtime: 
+  The binding of overloaded method call to its definition has happens at compile-time 
+  however binding of overridden method call to its definition happens at runtime.
   
-  The most basic difference is that overloading is being done in the same class while for overriding base and child classes are required. Overriding is all about giving a specific implementation to the inherited method of parent class.
+  The most basic difference is that overloading is being done in the same class 
+  while for overriding base and child classes are required. 
+  Overriding is all about giving a specific implementation to the inherited method of parent class.
   
   Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding methods.
   
-  Performance: Overloading gives better performance compared to overriding. The reason is that the binding of overridden methods is being done at runtime.
+  Performance: Overloading gives better performance compared to overriding. 
+  The reason is that the binding of overridden methods is being done at runtime.
 </pre>
