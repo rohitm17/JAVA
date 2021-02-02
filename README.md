@@ -137,3 +137,19 @@ Ans.
   Performance: Overloading gives better performance compared to overriding. 
   The reason is that the binding of overridden methods is being done at runtime.
 </pre>
+
+# Data Structures
+1. [Array](https://github.com/rohitm17/JAVA/blob/master/Sort%20an%20Array%20in%20ascending%20order) 
+2. [Stack]()
+3. [Queue](https://github.com/rohitm17/JAVA/blob/master/Queue)
+4. [LinkedList](https://github.com/rohitm17/JAVA/blob/master/LinkedList)
+5. [Set](https://github.com/rohitm17/JAVA/blob/master/SetMethods.java)
+
+# Sorting Algorithm
+1. [Bubble Sort](https://github.com/rohitm17/JAVA/blob/master/Bubble%20Sort)
+2. [Count Sort](https://github.com/rohitm17/JAVA/blob/master/CountSort.java)
+
+# Special Numbers
+1. [Armstrong Number](https://github.com/rohitm17/JAVA/blob/master/Armstrong%20Number)
+2. [Palindrome Number](https://github.com/rohitm17/JAVA/blob/master/Palindrome%20Number)
+3. [Krishnamurthy Number](https://github.com/rohitm17/JAVA/blob/master/Krishnamurthy%20Number)
