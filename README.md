@@ -144,6 +144,8 @@ Ans.
 3. [Queue](https://github.com/rohitm17/JAVA/blob/master/Queue)
 4. [LinkedList](https://github.com/rohitm17/JAVA/blob/master/LinkedList)
 5. [Set](https://github.com/rohitm17/JAVA/blob/master/SetMethods.java)
+6. [String Builder](https://github.com/rohitm17/JAVA/blob/master/String_Builder.java)
+7. [Array Deque](https://github.com/rohitm17/JAVA/blob/master/Array_Deque.java)
 
 # Sorting Algorithm
 1. [Bubble Sort](https://github.com/rohitm17/JAVA/blob/master/Bubble%20Sort)
